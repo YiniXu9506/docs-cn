@@ -547,7 +547,7 @@ replace HIGH_PRIORITY | LOW_PRIORITY into table_name;
 
 触发策略：新表达到 1000 条，并且在 1 分钟内没有写入，会自动触发。
 
-当表的（修改数/当前总行数）大于 `tidb_auto_analyze_ratio` 的时候，会自动触发 analyze 语句。`tidb_auto_analyze_ratio` 的默认值为 0，即关闭此功能。为了保险起见，在开启此功能的时候，保证了其最小值为 0.3。但是不能大于等于 `pseudo-estimate-ratio`（默认值为 0.7），否则会有一段时间使用 pseudo 统计信息，建议设置值为 0.5。
+当表的（修改数/当前总行数）大于 `tidb_auto_analyze_ratio` 的时候，会自动触发 `analyze` 语句。`tidb_auto_analyze_ratio` 的默认值为 0.5，即默认开启此功能。为了保险起见，在开启此功能的时候，保证了其最小值为 0.3。但是不能大于等于 `pseudo-estimate-ratio`（默认值为 0.8），否则会有一段时间使用 pseudo 统计信息，建议设置值为 0.5。
 
 #### 3.3.12 SQL 中如何通过 hint 使用一个具体的 index？
 
@@ -800,6 +800,7 @@ TiDB 读流量可以通过增加 TiDB server 进行扩展，总读容量无限�
 
 由于分布式事务要做两阶段提交，并且底层还需要做 Raft 复制，如果一个事务非常大，会使得提交过程非常慢，并且会卡住下面的 Raft 复制流程。为了避免系统出现被卡住的情况，我们对事务的大小做了限制：
 
+- 单个事务包含的 SQL 语句不超过 5000 条（默认）
 - 单条 KV entry 不超过 6MB
 - KV entry 的总条数不超过 30w
 - KV entry 的总大小不超过 100MB
