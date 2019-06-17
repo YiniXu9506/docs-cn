@@ -8,7 +8,7 @@ category: reference
 
 `UPDATE` 语句用于修改指定表中的数据。
 
-## 总览
+## 语法图
 
 **UpdateStmt:**
 
@@ -30,7 +30,7 @@ category: reference
 
 ![WhereClauseOptional](/media/sqlgram/WhereClauseOptional.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> CREATE TABLE t1 (id INT NOT NULL PRIMARY KEY auto_increment, c1 INT NOT NULL);
@@ -67,7 +67,7 @@ mysql> SELECT * FROM t1;
 
 ## MySQL 兼容性
 
-`UPDATE` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`UPDATE` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

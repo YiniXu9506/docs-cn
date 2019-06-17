@@ -8,7 +8,7 @@ category: reference
 
 `REVOKE <privileges>` 语句用于删除已有用户的权限。
 
-## 总览
+## 语法图
 
 **GrantStmt:**
 
@@ -38,7 +38,7 @@ category: reference
 
 ![UserSpecList](/media/sqlgram/UserSpecList.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> CREATE USER newuser IDENTIFIED BY 'mypassword';
@@ -76,7 +76,7 @@ ERROR 1141 (42000): There is no such grant defined for user 'newuser' on host '%
 
 ## MySQL 兼容性
 
-`REVOKE <privileges>` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`REVOKE <privileges>` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

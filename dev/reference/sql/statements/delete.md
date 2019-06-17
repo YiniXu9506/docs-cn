@@ -8,13 +8,13 @@ category: reference
 
 `DELETE` 语句用于从指定的表中删除行。
 
-## 总览
+## 语法图
 
 **DeleteFromStmt:**
 
 ![DeleteFromStmt](/media/sqlgram/DeleteFromStmt.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> CREATE TABLE t1 (id INT NOT NULL PRIMARY KEY auto_increment, c1 INT NOT NULL);
@@ -53,7 +53,7 @@ mysql> SELECT * FROM t1;
 
 ## MySQL 兼容性
 
-`DELETE` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`DELETE` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

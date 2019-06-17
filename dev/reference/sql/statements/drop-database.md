@@ -8,7 +8,7 @@ category: reference
 
 `DROP DATABASE` 语句用于永久删除指定的数据库 schema，以及删除所有在 schema 中创建的表和视图。与被删数据库相关联的用户权限不受影响。
 
-## 总览
+## 语法图
 
 **DropDatabaseStmt:**
 
@@ -26,7 +26,7 @@ category: reference
 
 ![DBName](/media/sqlgram/DBName.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> SHOW DATABASES;
@@ -56,7 +56,7 @@ mysql> SHOW DATABASES;
 
 ## MySQL 兼容性
 
-`DROP DATABASE` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`DROP DATABASE` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

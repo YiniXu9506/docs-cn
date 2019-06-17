@@ -8,7 +8,7 @@ category: reference
 
 `SHOW CREATE TABLE` 语句用于显示用 SQL 重新创建已有表的确切语句。
 
-## 总览
+## 语法图
 
 **ShowStmt:**
 
@@ -18,7 +18,7 @@ category: reference
 
 ![TableName](/media/sqlgram/TableName.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> CREATE TABLE t1 (a INT);
@@ -37,7 +37,7 @@ mysql> SHOW CREATE TABLE t1;
 
 ## MySQL 兼容性
 
-`SHOW CREATE TABLE` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`SHOW CREATE TABLE` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

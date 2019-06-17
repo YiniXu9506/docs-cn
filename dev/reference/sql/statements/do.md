@@ -6,9 +6,9 @@ category: reference
 
 # DO 
 
-`DO` 语句用于执行表达式，而不返回结果。在 MySQL 中，`DO` 的一个常见用例是执行存储的程序，而无需处理结果。但是 TiDB 不提供存储例程，因此 `DO` 函数的使用更为受限。
+`DO` 语句用于执行表达式，而不返回结果。在 MySQL 中，`DO` 的一个常见用例是执行存储的程序，而无需处理结果。但是 TiDB 不提供存储例程，因此该功能的使用较为受限。
 
-## 总览
+## 语法图
 
 **DoStmt:**
 
@@ -22,7 +22,7 @@ category: reference
 
 ![Expression](/media/sqlgram/Expression.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> SELECT SLEEP(5);
@@ -42,7 +42,7 @@ Query OK, 0 rows affected (2.50 sec)
 
 ## MySQL 兼容性
 
-`DO` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`DO` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

@@ -8,7 +8,7 @@ category: reference
 
 `SHOW CHARACTER SET` 语句提供 TiDB 中可用字符集的静态列表。此列表不反映当前连接或用户的任何属性。
 
-## 总览
+## 语法图
 
 **ShowStmt:**
 
@@ -22,7 +22,7 @@ category: reference
 
 ![CharsetKw](/media/sqlgram/CharsetKw.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> SHOW CHARACTER SET;
@@ -40,7 +40,7 @@ mysql> SHOW CHARACTER SET;
 
 ## MySQL 兼容性
 
-`SHOW CHARACTER SET` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`SHOW CHARACTER SET` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

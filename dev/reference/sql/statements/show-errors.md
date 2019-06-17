@@ -10,7 +10,7 @@ category: reference
 
 当前的 `sql_mode` 很大程度决定了哪些语句会产生错误与警告。
 
-## 总览
+## 语法图
 
 **ShowStmt:**
 
@@ -20,7 +20,7 @@ category: reference
 
 ![ShowTargetFilterable](/media/sqlgram/ShowTargetFilterable.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> select invalid;
@@ -52,7 +52,7 @@ Empty set (0.00 sec)
 
 ## MySQL 兼容性
 
-`SHOW ERRORS` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`SHOW ERRORS` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

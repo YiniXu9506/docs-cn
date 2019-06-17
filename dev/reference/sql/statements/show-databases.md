@@ -10,7 +10,7 @@ category: reference
 
 `SHOW SCHEMAS` 是 `SHOW DATABASES` 语句的别名。
 
-## 总览
+## 语法图
 
 **ShowStmt:**
 
@@ -20,7 +20,7 @@ category: reference
 
 ![ShowTargetFilterable](/media/sqlgram/ShowTargetFilterable.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> SHOW DATABASES;
@@ -52,7 +52,7 @@ mysql> SHOW DATABASES;
 
 ## MySQL 兼容性
 
-`SHOW DATABASES` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`SHOW DATABASES` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

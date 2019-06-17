@@ -8,13 +8,13 @@ category: reference
 
 `SET PASSWORD` 语句用于更改 TiDB 系统数据库中的用户密码。
 
-## 总览
+## 语法图
 
 **SetStmt:**
 
 ![SetStmt](/media/sqlgram/SetStmt.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> SET PASSWORD='test'; -- change my password
@@ -56,7 +56,7 @@ mysql> SHOW CREATE USER newuser;
 
 ## MySQL 兼容性
 
-`SET PASSWORD` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`SET PASSWORD` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

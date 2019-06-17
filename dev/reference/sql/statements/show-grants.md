@@ -8,7 +8,7 @@ category: reference
 
 `SHOW GRANTS` 语句用于显示与用户关联的权限列表。与在 MySQL 中一样，`USAGE` 权限表示登录 TiDB 的能力。
 
-## 总览
+## 语法图
 
 **ShowStmt:**
 
@@ -18,7 +18,7 @@ category: reference
 
 ![Username](/media/sqlgram/Username.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> SHOW GRANTS;
@@ -49,7 +49,7 @@ mysql> SHOW GRANTS FOR u1;
 
 ## MySQL 兼容性
 
-`SHOW GRANTS` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`SHOW GRANTS` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

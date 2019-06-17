@@ -8,7 +8,7 @@ category: reference
 
 `USE` 语句可为用户会话选择当前数据库。
 
-## 总览
+## 语法图
 
 **UseStmt:**
 
@@ -18,7 +18,7 @@ category: reference
 
 ![DBName](/media/sqlgram/DBName.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> USE mysql;
@@ -71,7 +71,7 @@ mysql> SHOW TABLES;
 
 ## MySQL 兼容性
 
-`USE` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`USE` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

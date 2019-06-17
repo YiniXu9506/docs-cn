@@ -8,7 +8,7 @@ category: reference
 
 `SHOW WARNINGS` 语句用于显示当前客户端连接中已执行语句的报错列表。与在 MySQL 中一样，`sql_mode` 极大地影响哪些语句会导致错误与警告。
 
-## 总览
+## 语法图
 
 **ShowStmt:**
 
@@ -18,7 +18,7 @@ category: reference
 
 ![ShowTargetFilterable](/media/sqlgram/ShowTargetFilterable.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> CREATE TABLE t1 (a INT UNSIGNED);
@@ -80,7 +80,7 @@ mysql> SELECT * FROM t1;
 
 ## MySQL 兼容性
 
-`SHOW WARNINGS` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`SHOW WARNINGS` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

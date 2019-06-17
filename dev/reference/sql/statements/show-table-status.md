@@ -8,7 +8,7 @@ category: reference
 
 `SHOW TABLE STATUS` 语句用于显示 TiDB 中表的各种统计信息。如果显示统计信息过期，建议运行 [`ANALYZE TABLE`](/dev/reference/sql/statements/analyze-table.md)。
 
-## 总览
+## 语法图
 
 **ShowStmt:**
 
@@ -22,7 +22,7 @@ category: reference
 
 ![ShowDatabaseNameOpt](/media/sqlgram/ShowDatabaseNameOpt.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> CREATE TABLE t1 (id INT NOT NULL PRIMARY KEY auto_increment, c1 INT NOT NULL);
@@ -82,7 +82,7 @@ Max_data_length: 0
 
 ## MySQL 兼容性
 
-`SHOW TABLE STATUS` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`SHOW TABLE STATUS` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

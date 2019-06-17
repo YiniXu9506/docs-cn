@@ -8,7 +8,7 @@ category: reference
 
 `ALTER TABLE .. RENAME INDEX` 语句用于对已有索引进行重命名。这在 TiDB 中是即时操作的，仅需更改元数据。
 
-## 总览
+## 语法图
 
 **AlterTableStmt:**
 
@@ -18,7 +18,7 @@ category: reference
 
 ![KeyOrIndex](/media/sqlgram/KeyOrIndex.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> CREATE TABLE t1 (id INT NOT NULL PRIMARY KEY auto_increment, c1 INT NOT NULL, INDEX col1 (c1));
@@ -52,7 +52,7 @@ Create Table: CREATE TABLE `t1` (
 
 ## MySQL 兼容性
 
-`RENAME INDEX` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`RENAME INDEX` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 

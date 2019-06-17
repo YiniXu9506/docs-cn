@@ -8,7 +8,7 @@ category: reference
 
 `DROP VIEW` 语句用于从当前所选定的数据库中删除视图对象。视图所引用的基表不受影响。
 
-## 总览
+## 语法图
 
 **DropViewStmt:**
 
@@ -22,7 +22,7 @@ category: reference
 
 ![TableName](/media/sqlgram/TableName.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> CREATE TABLE t1 (id INT NOT NULL PRIMARY KEY auto_increment, c1 INT NOT NULL);
@@ -75,7 +75,7 @@ mysql> SELECT * FROM t1;
 
 ## MySQL 兼容性
 
-`DROP VIEW` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`DROP VIEW` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## See also
 

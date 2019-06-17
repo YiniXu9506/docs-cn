@@ -10,7 +10,7 @@ category: reference
 
 若要在不同的数据库中显示表，可使用 `SHOW TABLES IN DatabaseName` 语句。
 
-## 总览
+## 语法图
 
 **ShowStmt:**
 
@@ -24,7 +24,7 @@ category: reference
 
 ![ShowDatabaseNameOpt](/media/sqlgram/ShowDatabaseNameOpt.png)
 
-## 实例
+## 示例
 
 ```sql
 mysql> CREATE TABLE t1 (a int);
@@ -77,7 +77,7 @@ mysql> SHOW TABLES IN mysql;
 
 ## MySQL 兼容性
 
-`SHOW [FULL] TABLES` 语句可视为与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
+`SHOW [FULL] TABLES` 语句与 MySQL 完全兼容。如有任何兼容性差异，请在 GitHub 上 提交 [issue](/report-issue.md)。
 
 ## 另请参阅
 
